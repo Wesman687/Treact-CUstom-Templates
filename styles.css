@@ -38,7 +38,15 @@ p {
     border-radius: 9999px;
     color: #f7fafc;
     padding: 16px 32px;
+}
 
+
+.nav__button:hover,
+.email__button:hover,
+.learn__button:hover {
+    background-color: rgb(80 17 204);
+    color: rgb(237 242 247);
+    transition: all 300ms ease;
 }
 
  /* NAV */
@@ -351,7 +359,7 @@ button {
 }
 
 .dollar__sign {
-    border: 20px solid #9ae6b4;
+    border: 16px solid #9ae6b4;
     background-color: #9ae6b4;
     border-radius: 50%;
 }
@@ -384,7 +392,7 @@ button {
 }
 .brief__case {
     margin-top: 12px;
-    border: 20px solid #feb2b2;
+    border: 16px solid #feb2b2;
     background-color: #feb2b2;
     border-radius: 50%;
 }
@@ -494,16 +502,25 @@ button {
     border: none;
 }
 .plan__button--teal {
+    position: relative;
     color: #f7fafc;
     background-color: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-
+    
+}
+.plan__button--blue:hover,
+.plan__button--red:hover,
+.plan__button--teal:hover {
+    transition: all 300ms ease;
+    box-shadow: 10px 21px 25px rgba(0,0,0,0.1), 0 25px 15px 5px rgba(0,0,0,0.04);
+    transform: translateX(1px) translateY(-1px);
 }
 .plan__button--red {
     color: #f7fafc;
     background-color: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
+
 
 .plan__body--text {
     padding: 12px;
@@ -613,10 +630,19 @@ button {
     background-color: #f56565;  
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
 }
+.get__started:hover {
+    background-color: rgb(229 62 62);
+}
 .contact__us {
     background-color: rgb(226, 232, 240);
     background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
     border: 1px solid rgb(160, 174, 192);
+}
+.contact__us:hover {
+    background-color: #f7fafc;
+    color: #6415ff;
+    border: none;
+    background-image: none;
 }
 
 .developer__row {
@@ -654,12 +680,21 @@ li {
     text-decoration: none;
     padding-top: 24px;
     list-style-type: none;
+
 }
+
 .footer__link {
     color: #f7fafc;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold;;
+    padding-bottom: .25rem;
 }
+.footer__link:hover {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+    border-bottom: 4px solid white
+}
+
 .copyright__wrapper {
     display: flex;
     width: 100%;
@@ -667,7 +702,7 @@ li {
     align-items: center;
     background-color: rgb(226, 232, 240);
     background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
-    padding: 48px 0px 80px;
+    padding: 48px 24px 80px 24px;
     border: 2px solid rgba(180, 199, 250, 0.2);
     border-left: none;
     border-right: none;
@@ -683,9 +718,10 @@ li {
     color: #f7fafc;
     font-size: 28px;
     font-weight: bold;
+    margin-left: 16px;
 }
 .footer__logo--wrappper {
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
 }
@@ -698,7 +734,7 @@ li {
 .youtube__link,
 .fb__link {
     color: #000;
-    margin: 24px;
+    margin: 12px;
     background: #f7fafc;
 }
 
@@ -706,10 +742,20 @@ li {
 .youtube__link {
     border-radius: 9999px;
     font-size: 24px;
-    border: 20px solid #f7fafc;
+    border: 12px solid #f7fafc;
 }
 .fb__link {
-    font-size: 18px;
-    border-radius: 52px;
-    border: 24px solid #f7fafc;
+    font-size: 16px;
+    border-radius: 58px;
+    border: 17px solid #f7fafc;
+}
+.youtube__link:hover,
+.twitter__link:hover {
+    border: 12px solid #cbd5e0;
+    background: #cbd5e0;
+
+}
+.fb__link:hover {
+    border: 17px solid #cbd5e0;
+    background: #cbd5e0;
 }
