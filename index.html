@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/f5fc8f7e11.js" crossorigin="anonymous"></script>
     <title>Treact</title>
-
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
     <body>
@@ -13,16 +13,31 @@
       <div class="row">
         <div class="nav__container">
           <div class="treact">
-            <img src="./assets/logo.svg" class="nav__logo" alt="" />
+            <img src="./assets/logo.svg" class="nav__logo" alt="">
             <h1 class="logo__text">Treact</h1>
           </div>
           <div class="nav__links">
-            <a href="" class="nav__link">About</a>
-            <a href="" class="nav__link">Blog</a>
-            <a href="" class="nav__link">Pricing</a>
-            <a href="" class="nav__link">Contact Us</a>
-            <a href="" class="nav__link">Login</a>
+            <a href="" class="nav__link" onclick="closeMenu()">About</a>
+            <a href="" class="nav__link" onclick="closeMenu()">Blog</a>
+            <a href="" class="nav__link" onclick="closeMenu()">Pricing</a>
+            <a href="" class="nav__link" onclick="closeMenu()">Contact Us</a>
+            <a href="" class="nav__link" onclick="closeMenu()">Login</a>
             <button class="nav__button">Sign Up</button>
+          </div>
+          <button class="btn__menu" onclick="openMenu()"><i class="fas fa-bars"></i></button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+            <ul class="menu__links">
+                <li class="menu__list">
+                    <a href="" class="menu__link">About</a>
+                    <a href="" class="menu__link">Blog</a>
+                    <a href="" class="menu__link">Pricing</a>
+                    <a href="" class="menu__link">Contact us</a>
+                    <a href="" class="menu__link">Login</a>
+                    <button class="nav__button backdrop__btn">Sign Up</button>
+                </li>
+            </ul>
+
           </div>
         </div>
       </div>
@@ -31,11 +46,13 @@
         <div class="row">
             <div class="landing__container">
                 <div class="left__container">
-                    <h1>Beauitful React Templates <span class="purple">for you</span></h>
+                    <h1 class="landing__title">Beauitful React Templates <span class="purple">for you</span></h>
                     <p class="email__paragraph">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                     <div class="getStarted">
-                        <input type="email" placeholder="Your E-mail Address">
-                        <button class="email__button">Get Started</button>
+                        <input type="email" placeholder="Your E-mail Address" class="email__input">
+                        <div class="email__wrapper">
+                            <button class="email__button">Get Started</button>
+                        </div>
                     </div>
                     <div class="customers">
                         <p class="customer__text">OUR TRUSTED CUSTOMERS</p>
@@ -56,7 +73,7 @@
             <div class="row">
                 <div class="title__wrapper">
                 <span class="features__text purple__text">FEATURES</span>
-                    <h1>We have Amazing <span class="purple"> Service</span></h1>
+                    <h1 class="features__title">We have Amazing <span class="purple"> Service</span></h1>
                     <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias neque voluptate eos labore! Sit delectus dolorem ducimus incidunt mollitia.</p>
                 </div>
                 <div class="services">
@@ -118,7 +135,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="window__container">
+            <div class="window__container design__container">
                 <div class="design__window1">
                     <span class="purple__text">Quality Work</span>
                     <h1 class="design__header">Designed & Developed by <span class="purple">Professionals</span></h1>
@@ -133,7 +150,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="window__container">
+            <div class="window__container steps__container">
                 <div class="steps__window1">
                     <figure>
                         <img src="./assets/hero-screenshot2.png" class="steps__image" alt="">
@@ -275,8 +292,7 @@
                     </div>
                  </div>
             </div>
-        </section>
-        <section id="footer">
+        
             <div class="row developer__row">
                 <div class="window__container developer__container">
                     <div class="developer__wrapper">
