@@ -986,6 +986,7 @@ li {
     }
     .developer__container {
         width: 90%;
+        padding: 56px 0;
     }
     .developer__wrapper {
         flex-direction: column;
@@ -1087,6 +1088,7 @@ li {
     }
     .design__container {
         flex-direction: column-reverse;
+        padding: 56px 0;
     }
     .design__window1 {
         align-items: center;
@@ -1128,6 +1130,7 @@ li {
     }
     .value__container {
         flex-direction: column-reverse;
+        padding: 56px 0;
     }
     .value__window1, .value__window2 {
         width: 90%;
@@ -1136,6 +1139,8 @@ li {
         padding-bottom: 64px;
     }
     .value__window1 {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
     .value__text {
@@ -1182,9 +1187,8 @@ li {
     }
     .learn__button {
         font-size: 12px;
-        max-width: 30%;
+        max-width: 120px;
         padding: 12px 24px;
-        text-wrap: nowrap;
     }
     .plan__para {
         width: 80%;
