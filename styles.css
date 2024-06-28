@@ -1082,6 +1082,7 @@ li {
     }
     .service__description {
         align-items: center;
+        margin: 8px 0;
     }
     .subtitle {
         text-align: center;
@@ -1106,6 +1107,11 @@ li {
     }
     .steps__window2 {
         width: 60%;
+    }
+    .steps__columns {
+        display: flex;
+        align-items: center;
+        margin: 0;
     }
     .windows2__wrapper {
         align-items: center;
