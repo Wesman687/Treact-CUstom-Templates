@@ -57,15 +57,26 @@ p {
 }
 input {
     border: none;
-    margin-left: 24px;
 }
+input::placeholder{
+    color: #a0a2c0;
+  }
+input, select, textarea{
+    color: #a0a2c0;
+}
+
+textarea:focus, input:focus {
+    color: #a0a2c0;
+    outline: none;
+}
+
 .nav__container {
     display: flex;
     margin-top: 32px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 32px;;
+    padding: 32px;
 }
 .treact {
     width: 24%;
@@ -194,8 +205,8 @@ button {
 .left__container {
     width: 40%;
     height: 100%;
-    padding: 24px;
     margin: 24px;
+
 }
 
 .email__button {
@@ -209,7 +220,14 @@ button {
     transition: all 300ms ease;
 
 }
-
+.email__input {
+    margin-left: 12px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 30%;
+    overflow: hidden;
+    color: black;
+}
 .customers {
     margin-top: 32px;
     display: flex;
@@ -425,9 +443,7 @@ button {
     color: #243e63;
 }
 
-.border__text {
-    margin-top: 20px;
-}
+
 .brief__case, 
 .dollar__sign {
     font-size: 24px;
@@ -442,6 +458,8 @@ button {
 .brief__container,
 .dollar__container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 32px 0 24px;
 }
 .brief__img {
@@ -474,10 +492,11 @@ button {
     background-color: #feb2b2;
     border-radius: 50%;
 }
-
-.brief__text {
-    padding-top: 24px;
+.brief__paragraph {
+    margin-bottom: 32px;
 }
+
+
 .value__button {
     margin-top: 72px;
 }
@@ -729,7 +748,6 @@ button {
 .contact__us:hover {
     background-color: #f7fafc;
     color: #6415ff;
-    border: none;
     background-image: none;
 }
 
@@ -771,7 +789,7 @@ li {
 .footer__link {
     color: #f7fafc;
     font-size: 18px;
-    font-weight: bold;;
+    font-weight: bold;
     padding-bottom: .25rem;
 }
 .footer__link:hover {
@@ -883,16 +901,19 @@ li {
         width: 90%;
         padding: 0;
     }
+
     .email__paragraph {
         text-align: center;
     }
+
     .email__button {
         width: 10rem;
         padding: 16px;
     }
-    .input {
+    .email__input {
         width: 90%;
-        color: rgb(226, 232,240);
+        color: #a0a2c0;
+        font-size: 24px;
     }
 
     .service__text { 
@@ -964,7 +985,9 @@ li {
     .value__wrapper {
         padding: 0;
     }
-
+    .dollar__container {
+        margin-right: 58px;
+    }
     .icon__paragraph {
         font-size: 18px;
     }
@@ -1056,9 +1079,8 @@ li {
         width: 90%;
         border: 4px solid rgb(226, 232,240);
         border-radius: 32px;
-        padding: 16px 24px;
+        padding: 12px 24px;
         margin: 0;
-        color: rgb(226, 232,240, .2);
         font-size: 18px;
     }
     .customers {
