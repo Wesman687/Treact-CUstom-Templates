@@ -337,11 +337,13 @@ button {
 .design__text {
     font-weight: 600;
 }
+
 .design__header {
     font-size: 56px;
     color: #243e63;
     font-weight: bold;
     margin: 16px 0px 0px;
+    width: 90%;
 
 }
 .design__subtitle {
@@ -474,7 +476,7 @@ button {
 .value__wrapper {
     display: flex;
     flex-direction: column;
-    margin: 32px 32px 0 0;
+    margin: 12px 32px 0 0;
 }
 .border__text--wrapper {
     display: flex;
@@ -731,10 +733,11 @@ button {
 
 .developer__button {
     color: white;
+    text-wrap: nowrap;
     font-weight: 600;
     font-size: 16px;
     border-radius: 9999px;
-    padding: 24px 40px;
+    padding: 20px 40px;
     border: none;
     margin-right: 32px;
 }
@@ -747,8 +750,7 @@ button {
     background-color: rgb(229 62 62);
 }
 .contact__us {
-    background-color: rgb(226, 232, 240);
-    background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
+    background-color: rgb(100, 21, 255);
     border: 1px solid rgb(160, 174, 192);
 }
 .contact__us:hover {
@@ -763,9 +765,9 @@ button {
 }
 
 .footer__container {
-    background-color: rgb(226, 232, 240);
-    background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
+    background-color: rgb(100, 21, 255);
     border: 2px solid (226, 232, 240);
+    padding: 72px;
 }
 .footer__columns {
     width: 100%;
@@ -792,8 +794,7 @@ li {
 
 }
 #footer { 
-    background-color: rgb(226, 232, 240);
-    background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
+    background-color: rgb(100, 21, 255);
 }
 .footer__row { 
     padding: 0;
@@ -815,8 +816,7 @@ li {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(226, 232, 240);
-    background-image: linear-gradient(135deg, rgb(100, 8, 248) 0%, rgb(78, 8, 241) 100%);
+    background-color: rgb(100, 21, 255);
     padding: 48px 24px 80px 24px;
     border: 2px solid rgba(180, 199, 250, 0.2);
     border-left: none;
@@ -918,6 +918,7 @@ li {
     .service__text {
         padding: 0 96px;
     }
+
     .title__wrapper {
         display: flex;
         align-items: center;
@@ -1033,11 +1034,7 @@ li {
     .plan__para {
         width: 70%;
     }
-    .value__title { 
-        font-size: 48px;
-        width: 90%;
-        text-align: center;
-    }
+
     .plans {
         flex-direction: column;
     }
